@@ -1,0 +1,35 @@
+title: 클라우드·AI 서비스 결제·리소스 완전 정리 (GCP·OpenAI)
+author: 교육자료
+logo: ""
+copyright: "2026"
+
+# 강의 자료이므로 코드 실행 비활성화 (마크다운 콘텐츠 위주)
+execute:
+  execute_notebooks: "off"
+
+# 한국어 콘텐츠 + HTML 인터랙션 파서 설정
+parse:
+  myst_enable_extensions:
+    - colon_fence
+    - deflist
+    - html_admonition
+    - linkify
+    - substitution
+
+html:
+  use_issues_button: false
+  use_repository_button: false
+  home_page_in_navbar: true
+
+sphinx:
+  extra_extensions:
+    - sphinxcontrib.mermaid   # intro.md 흐름도에 사용
+  config:
+    language: ko
+    html_show_copyright: true
+    suppress_warnings:
+      - "myst.header"
+    # 로드 순서 고정: custom.css(Ocean 테마) → darkmode.css(라이트모드 강제, 마지막)
+    html_css_files:
+      - custom.css
+      - darkmode.css

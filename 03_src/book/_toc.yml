@@ -1,0 +1,24 @@
+format: jb-book
+root: intro
+
+parts:
+  - caption: "Part 01 · GCP 가상 컴퓨터(VM) 삭제"
+    chapters:
+      - file: session1/01-login
+      - file: session1/02-console
+      - file: session1/03-open-vm
+      - file: session1/04-delete-instance
+  - caption: "Part 02 · GCP 결제계정·카드 삭제"
+    chapters:
+      - file: session2/01-login
+      - file: session2/02-console
+      - file: session2/03-billing-menu
+      - file: session2/04-close-account
+      - file: session2/05-disable-billing
+      - file: session2/06-delete-card
+      - file: session2/07-faq
+  - caption: "Part 03 · OpenAI(챗GPT) 정리"
+    chapters:
+      - file: session3/01-login
+      - file: session3/02-delete-api-keys
+      - file: session3/03-delete-card
