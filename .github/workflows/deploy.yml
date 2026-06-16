@@ -24,15 +24,25 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
+          cache: "pip"
 
       - name: Install dependencies
         run: pip install jupyter-book sphinxcontrib-mermaid
 
-      - name: Build Jupyter Book
-        run: jupyter-book build 03_src/book/
-
-      - name: Configure Pages
+      # configure-pages를 빌드 전에 실행해서 base_url을 빌드에 반영
+      - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v5
+
+      - name: Build Jupyter Book
+        run: |
+          jupyter-book build 03_src/book/
+          echo "Build output:"
+          ls -la 03_src/book/_build/html/
+
+      # Jekyll이 _static 등 언더스코어 폴더를 무시하지 않도록
+      - name: Add .nojekyll
+        run: touch 03_src/book/_build/html/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
