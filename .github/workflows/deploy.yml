@@ -27,7 +27,7 @@ jobs:
           cache: "pip"
 
       - name: Install dependencies
-        run: pip install jupyter-book sphinxcontrib-mermaid
+        run: pip install -r requirements.txt
 
       # configure-pages를 빌드 전에 실행해서 base_url을 빌드에 반영
       - name: Setup Pages
