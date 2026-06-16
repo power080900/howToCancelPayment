@@ -1,0 +1,20 @@
+# ① 산출물 선택 + 과목 메타
+title: "클라우드·AI 서비스 결제·리소스 완전 정리 (GCP·OpenAI)"
+slug: "howToCancelPayment"
+code: 101                      # 레벨코드 백자리 = 문해력(Literacy)
+level: "문해력(101)"
+outputs:                       # ① 선택 결과 — 03_src/·04_output/ 하위는 이 목록만 존재
+  - jupyterbook
+audience: "컴퓨터/인터넷이 익숙하지 않은, 클라우드·AI 서비스 결제를 정리하려는 분"
+duration: "자기주도 약 40~60분 (세션 3개)"
+sessions:                      # 3세션 구성 (입력 이미지 폴더와 1:1 대응)
+  - "세션1 GCP 가상 컴퓨터(VM) 삭제      → 01_input/images/session1_deleteVmEngine"
+  - "세션2 GCP 결제계정·카드 삭제         → 01_input/images/session2_deleteGcpCard"
+  - "세션3 OpenAI(챗GPT) API키·카드 정리  → 01_input/images/session3_openAI"
+goals:
+  - "GCP 가상 컴퓨터(VM 인스턴스)를 삭제할 수 있다"
+  - "GCP 결제 계정을 폐쇄하고 프로젝트 결제 사용을 중지할 수 있다"
+  - "GCP에 등록된 카드를 삭제할 수 있다"
+  - "OpenAI의 API 키와 결제 카드를 삭제할 수 있다"
+status: "published"
+# 빌드 소스: 03_src/book/  |  배포 산출물: 04_output/jupyter_book/  |  초안·로그: 02_draft/

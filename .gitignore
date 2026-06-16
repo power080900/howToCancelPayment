@@ -1,0 +1,6 @@
+# Build outputs
+03_src/book/_build/
+
+# OS files
+.DS_Store
+Thumbs.db
